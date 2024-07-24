@@ -47,23 +47,23 @@
         .column {
             flex: 1;
         }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+            margin: 5px 0;
+        }
         .item p {
-            display: inline-block;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            font-size: 18px;
+            margin: 0;
         }
-        .drink, .dessert {
-            text-align: left;
-            width: 75%;
-        }
-        .price {
-            text-align: right;
-            width: 25%;
-        }
-        .flavors{
-            text-align: center;
-            font-size: 18px;
+        .section-box {
+            border: 2px solid #b2dfdb; /*Soft sage green border */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            background-color: rgba(227, 178, 16, 0.116); /* Slightly transparent yellowish background */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
         }
     </style>
 </head>
@@ -75,43 +75,56 @@
             <p>The mission of the UDB is to create delicious, handcrafted baked goods that celebrate imperfection and individuality. We believe that beauty lies in authenticity, and our diverse selection of treats are made with love, using high quality ingredients. We aim to foster a warm community atmosphere where everyone feels welcome, reminding us that sometimes the most unexpected creations can be the most delightful.</p>
             <hr>   
             <section class="columns">
-                <div class="column">
+                <div class="column section-box">
                     <h2>Coffee</h2>
                     <article class="item">
-                        <p class="drink">Matcha</p><p class="price">3.00</p>
+                        <p class="drink">Matcha</p><p class="price">$6.25</p>
                     </article>
                     <article class="item">
-                        <p class="drink">Latte</p><p class="price">3.00</p>
+                        <p class="drink">Latte</p><p class="price">$5.00</p>
                     </article>
                     <article class="item">
-                        <p class="drink">Cappuccino</p><p class="price">3.00</p>
+                        <p class="drink">Cappuccino</p><p class="price">$4.00</p>
                     </article>
                     <article class="item">
-                        <p class="drink">Chai</p><p class="price">3.00</p>
+                        <p class="drink">Chai</p><p class="price">$4.25</p>
                     </article>
                     <article class="item">
-                        <p class="drink">Macchiato</p><p class="price">3.00</p>
+                        <p class="drink">Macchiato</p><p class="price">$5.50</p>
                     </article>
-                    <h2>Flavors</h2>
-                        <article class="flavors">
-                            <p>Vanilla</p>
-                            <p>Hazelnut</p>
-                            <p>Mocha</p>                            
-                        </articel>
+                    <h2>Flavors ($0.75)</h2>
+                    <article class="flavors">
+                        <p>Vanilla</p>
+                        <p>Hazelnut</p>
+                        <p>Mocha</p>                            
+                    </articel>
                 </div>
-                <div class="column">
+                <div class="column section-box">
                     <h2>Desserts</h2>
                     <article class="item">
-                        <p class="dessert">Brownie</p><p class="price">3.00</p>
+                        <p class="dessert">Brownie</p><p class="price">$3.00</p>
                     </article>
                     <article class="item">
-                        <p class="dessert">Cupcake</p><p class="price">3.00</p>
+                        <p class="dessert">Cupcake</p><p class="price">$4.25</p>
                     </article>
                     <article class="item">
-                        <p class="dessert">Cookie</p><p class="price">3.00</p>
+                        <p class="dessert">Cookie</p><p class="price">$2.00</p>
                     </article>
                     <article class="item">
-                        <p class="dessert">Coffee Cake</p><p class="price">3.00</p>
+                        <p class="dessert">Coffee Cake</p><p class="price">$3.00</p>
+                    </article>
+                    <h2>Apparel</h2>
+                    <article class="item">
+                        <p class="apparel">Hat</p><p class="price">$15.00</p>
+                    </article>
+                    <article class="item">
+                        <p class="apparel">Sweater</p><p class="price">$45.00</p>
+                    </article>
+                    <article class="item">
+                        <p class="apparel">Pin</p><p class="price">$7.00</p>
+                    </article>
+                    <article class="item">
+                        <p class="apparel">T-Shirt</p><p class="price">$20.00</p>
                     </article>
                 </div>
             </section>
