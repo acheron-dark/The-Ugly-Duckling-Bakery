@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,13 +11,18 @@
             font-family: sans-serif;
             padding: 20px;
         }
-        h1, h2, p {
+
+        h1,
+        h2,
+        p {
             text-align: center;
             color: #6D4C41;
         }
+
         p {
             font-style: italic;
         }
+
         .menu {
             width: 80%;
             margin-left: auto;
@@ -26,27 +32,33 @@
             background-color: #FFF8E1;
             border-radius: 10px;
         }
+
         h1 {
             font-size: 40px;
             margin-top: 0;
             margin-bottom: 15px;
         }
+
         h2 {
             font-size: 30px;
         }
+
         hr {
             height: 2px;
             background-color: brown;
             border: none;
         }
+
         .columns {
             display: flex;
             justify-content: space-between;
             gap: 20px;
         }
+
         .column {
             flex: 1;
         }
+
         .item {
             display: flex;
             justify-content: space-between;
@@ -54,19 +66,31 @@
             font-size: 18px;
             margin: 5px 0;
         }
+
         .item p {
             margin: 0;
         }
+
         .section-box {
-            border: 2px solid #b2dfdb; /*Soft sage green border */
+            border: 2px solid #b2dfdb;
+            /*Soft sage green border */
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 10px;
-            background-color: rgba(227, 178, 16, 0.116); /* Slightly transparent yellowish background */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+            background-color: rgba(227, 178, 16, 0.116);
+            /* Slightly transparent yellowish background */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Shadow */
+        }
+
+        .section-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
     </style>
 </head>
+
 <body>
     <header style="background-color:#6D4C41; padding:10px;">
         <nav style="display:flex; justify-content:space-around;">
@@ -79,65 +103,99 @@
     <div class="menu">
         <main>
             <h1>The Ugly Duckling</h1>
-            <img src="https://images.pexels.com/photos/4168623/pexels-photo-4168623.jpeg" alt="Delicious Coffee" style="width:100%; border-radius:10px; margin-bottom:20px;">
+            <img src="https://images.pexels.com/photos/4168623/pexels-photo-4168623.jpeg" alt="Delicious Coffee"
+                style="width:100%; border-radius:10px; margin-bottom:20px;">
             <p>Est. 2024</p>
-            <p>The mission of the UDB is to create delicious, handcrafted baked goods that celebrate imperfection and individuality. We believe that beauty lies in authenticity, and our diverse selection of treats are made with love, using high quality ingredients. We aim to foster a warm community atmosphere where everyone feels welcome, reminding us that sometimes the most unexpected creations can be the most delightful.</p>
-            <hr>   
+            <p>The mission of the UDB is to create delicious, handcrafted baked goods that celebrate imperfection and
+                individuality. We believe that beauty lies in authenticity, and our diverse selection of treats are made
+                with love, using high quality ingredients. We aim to foster a warm community atmosphere where everyone
+                feels welcome, reminding us that sometimes the most unexpected creations can be the most delightful.</p>
+            <hr>
             <section class="columns">
                 <div class="column section-box">
-                    <h2>Coffee</h2>
-                    <article class="item">
-                        <p class="drink">Matcha</p><p class="price">$6.25</p>
-                    </article>
-                    <article class="item">
-                        <p class="drink">Latte</p><p class="price">$5.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="drink">Cappuccino</p><p class="price">$4.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="drink">Chai</p><p class="price">$4.25</p>
-                    </article>
-                    <article class="item">
-                        <p class="drink">Macchiato</p><p class="price">$5.50</p>
-                    </article>
-                    <h2>Flavors ($0.75)</h2>
-                    <article class="flavors">
-                        <p>Vanilla</p>
-                        <p>Hazelnut</p>
-                        <p>Mocha</p>                            
-                    </articel>
+
+                    <div>
+                        <h2>Coffee</h2>
+                        <article class="item">
+                            <p class="drink">Matcha</p>
+                            <p class="price">$6.25</p>
+                        </article>
+                        <article class="item">
+                            <p class="drink">Latte</p>
+                            <p class="price">$5.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="drink">Cappuccino</p>
+                            <p class="price">$4.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="drink">Chai</p>
+                            <p class="price">$4.25</p>
+                        </article>
+                        <article class="item">
+                            <p class="drink">Macchiato</p>
+                            <p class="price">$5.50</p>
+                        </article>
+                    </div>
+
+
+                    <div>
+                        <h2>Flavors ($0.75)</h2>
+                        <article class="flavors">
+                            <p>Vanilla</p>
+                            <p>Hazelnut</p>
+                            <p>Mocha</p>
+                        </article>
+                    </div>
+
+
+
                 </div>
                 <div class="column section-box">
-                    <h2>Desserts</h2>
-                    <article class="item">
-                        <p class="dessert">Brownie</p><p class="price">$3.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="dessert">Cupcake</p><p class="price">$4.25</p>
-                    </article>
-                    <article class="item">
-                        <p class="dessert">Cookie</p><p class="price">$2.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="dessert">Coffee Cake</p><p class="price">$3.00</p>
-                    </article>
-                    <h2>Apparel</h2>
-                    <article class="item">
-                        <p class="apparel">Hat</p><p class="price">$15.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="apparel">Sweater</p><p class="price">$45.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="apparel">Pin</p><p class="price">$7.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="apparel">T-Shirt</p><p class="price">$20.00</p>
-                    </article>
+                    <div>
+                        <h2>Desserts</h2>
+                        <article class="item">
+                            <p class="dessert">Brownie</p>
+                            <p class="price">$3.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="dessert">Cupcake</p>
+                            <p class="price">$4.25</p>
+                        </article>
+                        <article class="item">
+                            <p class="dessert">Cookie</p>
+                            <p class="price">$2.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="dessert">Coffee Cake</p>
+                            <p class="price">$3.00</p>
+                        </article>
+                    </div>
+
+                    <div>
+                        <h2>Apparel</h2>
+                        <article class="item">
+                            <p class="apparel">Hat</p>
+                            <p class="price">$15.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="apparel">Sweater</p>
+                            <p class="price">$45.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="apparel">Pin</p>
+                            <p class="price">$7.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="apparel">T-Shirt</p>
+                            <p class="price">$20.00</p>
+                        </article>
+                    </div>
+
                 </div>
             </section>
         </main>
     </div>
 </body>
+
 </html>
