@@ -63,6 +63,12 @@ body {
         .item p {
             margin: 0;
         }
+        
+        .item img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 10px;
+        }
 
         .section-box {
             border: 2px solid #b2dfdb;
