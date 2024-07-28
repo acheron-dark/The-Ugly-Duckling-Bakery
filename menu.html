@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Ugly Duckling Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                });
+        });
+    </script>
+</head>
+
+<body>
+    <header style="background-color:#6D4C41; padding:10px;">
+        <div id="navbar-placeholder"></div>
+    </header>
+    <div class="menu">
+        <main>
+            <h1>The Ugly Duckling</h1>
+            <img src="https://images.pexels.com/photos/4168623/pexels-photo-4168623.jpeg" alt="Delicious Coffee"
+                style="width:100%; border-radius:10px; margin-bottom:20px;">
+            <section class="columns">
+                <div class="column section-box">
+
+                    <div>
+                        <h2>Coffee</h2>
+                        <article class="item">
+                            <p class="drink">Matcha</p>
+                            <p class="price">$6.25</p>
+                        </article>
+                        <article class="item">
+                            <p class="drink">Latte</p>
+                            <p class="price">$5.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="drink">Cappuccino</p>
+                            <p class="price">$4.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="drink">Chai</p>
+                            <p class="price">$4.25</p>
+                        </article>
+                        <article class="item">
+                            <p class="drink">Macchiato</p>
+                            <p class="price">$5.50</p>
+                        </article>
+                    </div>
+
+
+                    <div>
+                        <h2>Flavors ($0.75)</h2>
+                        <article class="flavors">
+                            <p>Vanilla</p>
+                            <p>Hazelnut</p>
+                            <p>Mocha</p>
+                        </article>
+                    </div>
+
+
+
+                </div>
+                <div class="column section-box">
+                    <div>
+                        <h2>Desserts</h2>
+                        <article class="item">
+                            <p class="dessert">Brownie</p>
+                            <p class="price">$3.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="dessert">Cupcake</p>
+                            <p class="price">$4.25</p>
+                        </article>
+                        <article class="item">
+                            <p class="dessert">Cookie</p>
+                            <p class="price">$2.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="dessert">Coffee Cake</p>
+                            <p class="price">$3.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="dessert">Cake pop</p>
+                            <p class="price">$3.00</p>
+                        </article><article class="item">
+                            <p class="dessert">Pudding</p>
+                            <p class="price">$3.00</p>
+                        </article><article class="item">
+                            <p class="dessert">Muffin</p>
+                            <p class="price">$3.00</p>
+                        </article>
+                    </div>
+
+
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
