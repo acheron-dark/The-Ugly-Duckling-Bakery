@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form - The Ugly Duckling Bakery</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                });
+        });
+    </script>\
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
